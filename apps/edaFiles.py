@@ -1,6 +1,5 @@
 import zipfile
 import pandas as pd
-import pandas_profiling
 import streamlit as st
 from streamlit_pandas_profiling import st_profile_report
 import streamlit.components.v1 as components
@@ -39,7 +38,11 @@ def edaFiles():
 
     relatorio = st.selectbox('',('Selecione um Relatório' , '1 - Pandas Profiling' , '2 - Sweetviz'))
 
-    if  relatorio[0:1] == '1':
+    #devido à base ser muito grande a geração das análises exloratórias, levam muito tempo e muitas vezes dando timeout no share streamlit
+    #com isso, criei os relatórios localmente, visto que, a base é estática.
+    # para gerar em seu local descomente as linhas abaixo. 
+    
+    """if  relatorio[0:1] == '1':
 
         with st.spinner('Por favor, aguarde a geração. Este processo poderá ser demorado.'):
         
@@ -56,8 +59,6 @@ def edaFiles():
 
             #Passando argumentos para a função (utlizando cache) de geração do relatório
             pr = gen_profile_report(df, title= "Relatório Pandas Profiling",explorative=True)
-
-            
 
             #print
             st_profile_report(pr)
@@ -83,8 +84,6 @@ def edaFiles():
             pr.show_html(filepath='./SWEETVIZ_REPORT.html', open_browser=True, layout='vertical', scale=1.0)
            
 
-
-
 #Optimizando a perfomance com cache e criando a função para o profile report
 @st.cache(allow_output_mutation=True)
 def gen_profile_report(df, *report_args, **report_kwargs):
@@ -93,5 +92,8 @@ def gen_profile_report(df, *report_args, **report_kwargs):
 #Optimizando a perfomance com cache e criando a função para o analyser
 @st.cache(allow_output_mutation=True)
 def gen_sweet_report(df):
-    return sv.analyze(df)
+    return sv.analyze(df)"""
+
+    if  relatorio[0:1] == '1':
+        components.iframe(src="./reports/profilingReport.html")       
 

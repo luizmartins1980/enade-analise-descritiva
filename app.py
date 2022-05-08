@@ -3,18 +3,20 @@ from streamlit_option_menu import option_menu
 import apps.tratamentoBase
 import apps.edaFiles
 import apps.analiseCurso
+import apps.analiseGeral
 
-st.set_page_config()
 
+#criando menu utilizando o streamlit_option_menu
 with st.sidebar:
     escolha = option_menu("Menu", 
                         
                         ["Home", 
                         "Tratamento Base Dados", 
                         "Análise Exploratória", 
+                        "Análise Geral",
                         "Análise por Curso"],
 
-                         icons=["house", "file-bar-graph", "file-bar-graph", "bar-chart"], #https://icons.getbootstrap.com/
+                         icons=["house", "server", "file-bar-graph", "bar-chart", "bar-chart"], #https://icons.getbootstrap.com/
                          
                          menu_icon="menu-button-wide", 
                          
@@ -24,12 +26,12 @@ with st.sidebar:
                                     "container": {"padding": "5!important", "background-color": "#E1117"},
                                     "icon": {"color": "#FF4B4B", "font-size": "25px"}, 
                                     
-                                    "nav-link": {"font-size": "12px", "text-align": "left", "margin":"0px", "--hover-color": "#262730", "icon" : "#FF4B4B"},
+                                    "nav-link": {"font-size": "12px", "color":"#FFFFFF", "text-align": "left", "margin":"0px", "--hover-color": "#262730", "icon" : "#FF4B4B"},
                                     "nav-link-selected": {"background-color": "#262730"},
                                 }
                         )
 
-
+#mostrando a página selecionada
 if escolha == "Home":
     """
         # Trabalho Final Estatística Descritiva e Criação de Dashboards
@@ -66,5 +68,8 @@ elif  escolha == "Análise Exploratória":
 
 elif  escolha == "Análise por Curso":
     apps.analiseCurso.analiseCurso()
+
+elif  escolha == "Análise por Curso":
+    apps.analiseGeral.analiseGeral()
 
     

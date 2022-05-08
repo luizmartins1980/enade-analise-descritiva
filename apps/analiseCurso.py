@@ -228,7 +228,7 @@ def analiseCurso():
             st.markdown("---")
 
             #print usando markdown
-            st.markdown("**8 - Variáveis Selecionadas**")
+            st.markdown("**8 - Variáveis Selecionadas (clique no + ou sob a variável desejada para expandir)**")
 
             #contador para numerar as variáveis selecionadas 
             count = 1
