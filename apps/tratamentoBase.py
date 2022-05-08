@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import apps.dicionarioDados as dd
+import zipfile
 
 
 def tratamentoBase():
@@ -9,9 +10,10 @@ def tratamentoBase():
     #Título
     st.markdown("# **Tratamento da Base de Dados**")
     
-    
     #importando base
-    dfPrincipal = pd.read_csv("../base/microdados_enade_2019.txt",delimiter=";", decimal=",")
+    with zipfile.ZipFile("./data/microdados_enade_2019.zip") as zip:
+        with zip.open("microdados_enade_2019.csv") as arq:
+            dfPrincipal = pd.read_csv(arq,delimiter=";", decimal=",")
 
     
     #análise base de dados
@@ -159,24 +161,13 @@ def tratamentoBase():
         col1, col2, col3 = st.columns(3)
             
         with col1:
-            st.write("Arquivo Original")
-            st.download_button(label="Download",
-                            data ="",
-                            file_name="workbook.xlsx",
-                            mime="application/vnd.ms-excel")
+            st.write("Base Original  [Download](https://drive.google.com/file/d/1XJXa4j_SP19q4K7fxFOEf1riIa43teKU/view?usp=sharing)")
 
         with col2:
-            st.write("Base Tratada XLSX")
-            st.download_button(
-        label="Download",
-        data="",
-        file_name="large_df.csv",
-        mime="text/csv")
+            st.write("Base Tratada (CSV) [Download](https://drive.google.com/file/d/1KFDhJ36AsP4t1VSwFgqyVokZpsiEfoCo/view?usp=sharing)")
 
         with col3:
-            st.write("Base Tratada CSV")
-            text_contents = """This is some text"""
-            st.download_button("Download some text", text_contents)
+            st.write("Base Original (XLSX)  [Download](https://drive.google.com/file/d/1VUts9NjOUr5CXHheg_9GeR_Y4oJyStrF/view?usp=sharing)")
     
     
     #exportando para o csv - descomente a linha abaixo caso queira exportar
