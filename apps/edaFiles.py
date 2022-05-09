@@ -97,8 +97,8 @@ def gen_sweet_report(df):
 
     if  relatorio[0:1] == '1':
 
-           webbrowser.open_new_tab("https://htmlpreview.github.io/?https://github.com/luizmartins1980/enade-analise-descritiva/blob/main/reports/profilingReport.html")
+           st.markdown("**Pandas Profiling** [Visualizar](https://htmlpreview.github.io/?https://github.com/luizmartins1980/enade-analise-descritiva/blob/main/reports/profilingReport.html)")
 
     elif  relatorio[0:1] == '2':
 
-           webbrowser.open_new_tab("https://htmlpreview.github.io/?https://github.com/luizmartins1980/enade-analise-descritiva/blob/main/reports/SWEETVIZ_REPORT.html")           
+           st.markdown("**Sweetviz** [Visualizar](https://htmlpreview.github.io/?https://github.com/luizmartins1980/enade-analise-descritiva/blob/main/reports/SWEETVIZ_REPORT.html)")

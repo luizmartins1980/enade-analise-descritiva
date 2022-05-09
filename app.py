@@ -26,7 +26,7 @@ with st.sidebar:
                                     "container": {"padding": "5!important", "background-color": "#E1117"},
                                     "icon": {"color": "#FF4B4B", "font-size": "25px"}, 
                                     
-                                    "nav-link": {"font-size": "12px", "color":"#FFFFFF", "text-align": "left", "margin":"0px", "--hover-color": "#262730", "icon" : "#FF4B4B"},
+                                    "nav-link": {"font-size": "12px", "color":"#696969", "text-align": "left", "margin":"0px", "--hover-color": "#262730", "icon" : "#FF4B4B"},
                                     "nav-link-selected": {"background-color": "#262730"},
                                 }
                         )
