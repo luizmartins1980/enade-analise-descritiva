@@ -5,6 +5,7 @@ from streamlit_pandas_profiling import st_profile_report
 import streamlit.components.v1 as components
 import codecs
 import sweetviz as sv
+import webbrowser
 
 def edaFiles():
 
@@ -95,5 +96,9 @@ def gen_sweet_report(df):
     return sv.analyze(df)"""
 
     if  relatorio[0:1] == '1':
-        components.iframe(src="./reports/profilingReport.html")       
 
+           webbrowser.open_new_tab("https://htmlpreview.github.io/?https://github.com/luizmartins1980/enade-analise-descritiva/blob/main/reports/profilingReport.html")
+
+    elif  relatorio[0:1] == '2':
+
+           webbrowser.open_new_tab("https://htmlpreview.github.io/?https://github.com/luizmartins1980/enade-analise-descritiva/blob/main/reports/SWEETVIZ_REPORT.html")           

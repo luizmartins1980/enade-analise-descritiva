@@ -60,26 +60,5 @@ tabelaColuna = {"Coluna":[    "TipoInstituicao",
                         "Quem foi quem mais ajudou o aluno durante a conclusão do curso superior",
                         "Horas dedicadas por semana aos estudos, excetuando as horas de aula",
                         "Principal motivo de ter escolhido o curso"
-                ],
-        
-        "Texto2":[      "As universidades públicas ou privadas são melhores?",
-                        "Qual região se saiu melhor na avaliação?",
-                        "O turno interfere no desempenho do aluno?",
-                        "O estado civil do aluno atrapalha ou ajuda no seu desempenho?",
-                        "Conseguimos ter faculdades ou universidades inclusivas? ",
-                        "O nível de escolaridade do pai afeta o desempenho do filho(a)?",
-                        "O nível de escolaridade da mãe afeta o desempenho do filho(a)?",
-                        "O tipo da moradia torna o aluno mais comprometido com o estudo?",
-                        "O poder aquisitivo da família influencia no desenvolvimento do aluno?",
-                        "A situação financeira interfere no desenvoltura do aluno?",
-                        "Trabalhar atrapalha os estudos?",
-                        "Quem recebe benefício ou financia seus próprios estudos tendem a se dedicar mais?",
-                        "Sistemas de cotas ou inclusão social, estão tendo bons resultados?",
-                        "A preparação do ensino médio ajuda no desempenho acadêmico?",
-                        "A modalidade do ensino médio ajuda a preparar o aluno para uma vida acadêmica ",
-                        "Pessoas incentivadas em seu meio social tendem a ter melhor performance?",
-                        "Quando se tem ajuda nas dificuldades, o aluno alcança bons resultados?",
-                        "Quem se dedica mais alcança melhores resultados?",
-                        "A motivo da escolha do curso influencia na capacidade do aluno?"
-                ]
+        ]
 }

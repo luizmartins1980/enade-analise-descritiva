@@ -158,6 +158,9 @@ def tratamentoBase():
 
     with st.expander("Download Bases", False):
 
+        st.write("Para agilizar o estudo baixe aqui a base desejada. Durante toda a análise, será utilizada a base tratada csv.")
+        st.text("")
+
         col1, col2, col3 = st.columns(3)
             
         with col1:
@@ -167,7 +170,7 @@ def tratamentoBase():
             st.write("Base Tratada (CSV) [Download](https://drive.google.com/file/d/1KFDhJ36AsP4t1VSwFgqyVokZpsiEfoCo/view?usp=sharing)")
 
         with col3:
-            st.write("Base Original (XLSX)  [Download](https://drive.google.com/file/d/1VUts9NjOUr5CXHheg_9GeR_Y4oJyStrF/view?usp=sharing)")
+            st.write("Base Tratada (XLSX)  [Download](https://drive.google.com/file/d/1VUts9NjOUr5CXHheg_9GeR_Y4oJyStrF/view?usp=sharing)")
     
     
     #exportando para o csv - descomente a linha abaixo caso queira exportar

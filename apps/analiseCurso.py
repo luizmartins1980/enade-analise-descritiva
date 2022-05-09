@@ -266,7 +266,7 @@ def analiseCurso():
 
                         else:
                               
-                              #cria pivot table agrupado por sexo da variável
+                              #cria pivot table 
                               tabela =  pd.pivot_table(dfBase, index= coluna, values="NotaGeral", aggfunc= [len, np.mean], margins=True, margins_name="Geral")
                               
                               #criando join para deixar tudo apenas com uma linha de cabeçalho

@@ -5,7 +5,6 @@
     CO_GRUPO            -> Área de enquadramento do curso no Enade (Curso)
     CO_REGIAO_CURSO     -> Código da região de funcionamento do curso (Regiao)
     CO_TURNO_GRADUACAO  -> Código do turno de graduação (Turno)
-    CO_UF_CURSO         -> Código da UF de funcionamento do curso (UF)
     TP_SEXO             -> Sexo estudante (Sexo)
     QE_I01              -> Estado Civil (EstadoCivil)
     QE_I02              -> Cor ou raça (Raca)
@@ -88,35 +87,6 @@ dct_CO_TURNO_GRADUACAO =  {1 : "Matutino",
                            2 : "Vespertino",
                            3 : "Integral",
                            4 : "Noturno"}
-
-#Código da UF de funcionamento do curso
-dct_CO_UF_CURSO =  {11 : "RO",
-                    12 : "AC",
-                    13 : "AM",
-                    14 : "RR",
-                    15 : "PA",
-                    16 : "AP",
-                    17 : "TO",
-                    21 : "MA",
-                    22 : "PI",
-                    23 : "CE",
-                    24 : "RN",
-                    25 : "PB",
-                    26 : "PE",
-                    27 : "AL",
-                    28 : "SE",
-                    29 : "BA",
-                    31 : "MG",
-                    32 : "ES",
-                    33 : "RJ",
-                    35 : "SP",
-                    41 : "PR",
-                    42 : "SC",
-                    43 : "RS",
-                    50 : "MS",
-                    51 : "MT",
-                    52 : "GO",
-                    53 : "DF"}
 
 #Sexo
 dct_TP_SEXO = {"F" : "Feminino", 
