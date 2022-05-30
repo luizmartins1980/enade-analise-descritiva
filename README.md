@@ -4,6 +4,7 @@
 
 **Professor:** Thiago Marques
 
+**Link Acesso:** https://share.streamlit.io/luizmartins1980/enade-analise-descritiva/main/app.py
 
 **Objetivos do trabalho:**
 
